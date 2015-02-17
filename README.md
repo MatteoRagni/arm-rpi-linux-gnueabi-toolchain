@@ -1,0 +1,34 @@
+# Raspberry PI Toolchain
+
+This repo contains a compiled version of **Raspberry PI** toolchain for x68_64 Debian Linux host.
+Sources of the building dir are not included, but I'll keep update licensing informations and
+source code location that I've used for eachlib included in toolchain.
+
+> This is a personalized version of such toolchain. You will find a compiled standard version on rpi github repos!
+
+## How to install
+
+Clone the repo on host that is capable of run binaries included. Tested with `Debian 8 sid`.
+
+## How to use it
+
+A simple script to run it is included with the name `toolchain_rpi.sh`, 
+script used to compile **libpcre** and **libyaml**.
+
+Linker requires that env variable `$RPI_DIR` is set. This variable must contain the
+absolute path to the root of this repo.
+
+## Licenses and sources 
+
+### Licenses
+
+ * Built using crosstools-ng, with g++ support. Refer to project homepage for licenses.
+ * libpcre :: [from debian.org](http://metadata.ftp-master.debian.org/changelogs//main/p/pcre3/pcre3_8.02-1.1_copyright)
+ * libyaml :: [from debian.org](http://metadata.ftp-master.debian.org/changelogs//main/liby/libyaml/libyaml_0.1.3-1+deb6u4_copyright)
+ * libuv :: [from github](http://github.com/libuv/libuv/blob/v1.x/LICENSE)
+
+### Sources
+
+ * libpcre source code :: [from debian.org](https://packages.debian.org/squeeze/libpcre3)
+ * libyaml source code :: [from debian.org](https://packages.debian.org/squeeze/libyamo-0-2)
+ * libuv source code :: [from github])http://github.com/libuv/libuv)
